@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>An introduction to Service Workers</title>
+  <link rel="stylesheet" href="random.css">
+  <link rel="stylesheet" href="reveal.css">
+  <link rel="stylesheet" href="serif.css">
+  <script src="jquery.js"></script>
+  <script src="jquery_ujs.js"></script>
+  <script src="service_worker_client.js"></script>
+  <script src="reveal.js"></script>
+</head>
+  <body>
+    <div class="reveal slide center ready" role="application" data-transition-speed="default" data-background-transition="fade">
+  <div class="slides" style="width: 960px; height: 700px; zoom: 1.008;">
+    <section class="present" style="top: 234px; display: block;">
+      <h2>An Introduction to Service Workers</h2>
+      <p>Nathan Jenkins</p>
+    </section>
+    <section class="future" style="top: 140.5px; display: block;" hidden="" aria-hidden="true">
+      <h2>Preface</h2>
+      <div>Hopefully this talk will be both interesting and useful,</div>
+      <div>but in the event it isn't:</div>
+      <ul>
+        <li><a href='https://mastersofscale.com/selina-tobaccowala-let-fires-burn/'>Let the fires burn</a></li>
+        <li><a href='https://twimlai.com/twiml-talk-196-geometric-statistics-in-machine-learning-with-geomstats-with-nina-miolane/'>This Week in Machine Learning: geomstats</a></li>
+        <li><a href='https://waitbutwhy.com/2014/11/1000000-grahams-number.html'>Graham's number</a></li>
+      </ul>
+    </section>
+    <section class="future" style="top: 140.5px; display: block;" hidden="" aria-hidden="true">
+      <h2>Motivation</h2>
+      <ul>
+        <li>
+          Progressive Web Apps
+        </li>
+        <li>
+          Offline Support
+        </li>
+        <li>
+          Tab Communication
+        </li>
+      </ul>
+    </section>
+    <section class="future" style="top: 140.5px; display: block;" hidden="" aria-hidden="true">
+      <h2>Tab Communication</h2>
+      <ul>
+        <li>
+          Client-side applications have local state which can be managed
+          a number of ways, for example localStorage or IndexedDb.
+        </li>
+        <li>
+          One common problem is that these storage options are shared
+          across browser tabs, and it is easy for tabs to become stale.
+        </li>
+        <li>
+          This is why Firebase has only recently introduced multi-tab
+          support
+        </li>
+      </ul>
+    </section>
+    <section class="future" style="top: 64px; display: block;" hidden="" aria-hidden="true">
+      <h2>What is a service worker?</h2>
+      <img src="service-worker.svg" width="1000" style="border: 4;">
+      <a href="https://coryrylan.com/blog/fast-offline-angular-apps-with-service-workers">coryrylan.com/blog/fast-offline-angular-apps-with-service-workers</a>
+    </section>
+    <section class="future" style="top: 91px; display: none;" hidden="" aria-hidden="true">
+      <h2>Caveats</h2>
+      <ul>
+        <li>
+          https only
+        </li>
+        <li>
+          Can be tricky to debug
+        </li>
+        <li>
+          Installation isn't as straightforward as it could be
+        </li>
+      </ul>
+      <br>
+      <blockquote>
+        There are only two hard things in Computer Science: cache invalidation and naming things.
+
+        -- Phil Karlton
+      </blockquote>
+    </section>
+    <section class="future" style="top: 193px; display: none;" hidden="" aria-hidden="true">
+      <h2><a href='random.html' target='_blank'>Demo</a></h2>
+    </section>
+  </div>
+<div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide" disabled="disabled"></button><button class="navigate-down" aria-label="below slide" disabled="disabled"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+      Service Workers
+      Nathan Jenkins
+    </div></div>
+
+<script>
+  Reveal.initialize();
+</script>
+
+</body>
+</html>
